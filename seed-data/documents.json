@@ -1,0 +1,62 @@
+[
+  {
+    "doc_type": "품의서",
+    "subject": "2025년 1분기 마케팅 예산 집행 품의",
+    "body": "2025년 1분기 디지털 마케팅 캠페인 집행을 위한 예산 5,000만원 품의드립니다. 주요 집행 항목: Google Ads 2,000만원, Meta 광고 1,500만원, 인플루언서 협업 1,000만원, 콘텐츠 제작 500만원.",
+    "requester_name": "김마케팅",
+    "requester_dept": "마케팅팀",
+    "approval_line": [{"name":"이팀장","position":"팀장","status":"approved"},{"name":"박부장","position":"부장","status":"approved"},{"name":"최이사","position":"이사","status":"pending"}],
+    "created_at_doc": "2025-01-15",
+    "groupware": "hiworks",
+    "topics": ["마케팅","예산","디지털광고","품의"],
+    "coherence": {"overall_score": 82}
+  },
+  {
+    "doc_type": "지출결의서",
+    "subject": "서버 인프라 증설 비용 지출 결의",
+    "body": "월간 트래픽 증가에 따른 AWS 서버 인프라 증설이 필요합니다. 현재 월평균 트래픽이 전년 대비 200% 증가하여 EC2 인스턴스 3대 추가 및 RDS 스케일업이 필요합니다. 예상 월 비용: 850만원.",
+    "requester_name": "정개발",
+    "requester_dept": "개발팀",
+    "approval_line": [{"name":"강팀장","position":"팀장","status":"approved"},{"name":"오부장","position":"부장","status":"approved"}],
+    "created_at_doc": "2025-01-20",
+    "groupware": "bizbox_alpha",
+    "topics": ["IT인프라","서버","AWS","지출"],
+    "coherence": {"overall_score": 91}
+  },
+  {
+    "doc_type": "휴가신청서",
+    "subject": "연차 휴가 신청 (3일)",
+    "body": "개인 사유로 인한 연차 휴가를 신청합니다. 기간: 2025-02-10 ~ 2025-02-12 (3일). 업무 인수인계: 이동료 대리에게 진행 중인 프로젝트 현황 및 긴급 연락처를 전달 완료하였습니다.",
+    "requester_name": "박직원",
+    "requester_dept": "영업팀",
+    "approval_line": [{"name":"김팀장","position":"팀장","status":"approved"}],
+    "created_at_doc": "2025-02-05",
+    "groupware": "daou_office",
+    "topics": ["휴가","연차","인수인계"],
+    "coherence": {"overall_score": 95}
+  },
+  {
+    "doc_type": "품의서",
+    "subject": "신규 CRM 시스템 도입 품의",
+    "body": "고객 관리 효율화를 위한 신규 CRM 시스템 도입을 품의합니다. 현재 엑셀 기반 고객 관리의 한계로 고객 응대 시간이 평균 15분이며, CRM 도입 시 5분 이내로 단축 예상됩니다. HubSpot 추천 (연 1,800만원).",
+    "requester_name": "최기획",
+    "requester_dept": "기획팀",
+    "approval_line": [{"name":"한팀장","position":"팀장","status":"approved"},{"name":"윤부장","position":"부장","status":"pending"},{"name":"송이사","position":"이사","status":"pending"}],
+    "created_at_doc": "2025-01-25",
+    "groupware": "hiworks",
+    "topics": ["CRM","시스템도입","고객관리","품의"],
+    "coherence": {"overall_score": 78}
+  },
+  {
+    "doc_type": "지출결의서",
+    "subject": "사무실 리모델링 공사 비용",
+    "body": "노후화된 사무 환경 개선을 위한 리모델링 공사를 진행하고자 합니다. 공사 범위: 회의실 2개소, 휴게실 1개소, 사무 공간 조명 교체. 예상 비용: 총 2,500만원.",
+    "requester_name": "이총무",
+    "requester_dept": "총무팀",
+    "approval_line": [{"name":"장팀장","position":"팀장","status":"approved"},{"name":"김부장","position":"부장","status":"approved"},{"name":"박이사","position":"이사","status":"rejected"}],
+    "created_at_doc": "2025-02-01",
+    "groupware": "bizbox_alpha",
+    "topics": ["시설","리모델링","사무환경","지출"],
+    "coherence": {"overall_score": 55}
+  }
+]

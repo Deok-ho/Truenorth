@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko" data-groupware="daou_office">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>다우오피스 - 결재문서</title>
+  <link rel="stylesheet" href="assets/daouoffice-style.css" />
+</head>
+<body>
+  <!-- Daou Office DOM signature for detector.ts -->
+  <div id="daouoffice-app">
+    <div class="daou-wrap">
+
+      <!-- ===== HEADER ===== -->
+      <header class="daou-header">
+        <div class="daou-header-inner">
+          <div class="daou-logo">
+            <span class="daou-logo-symbol">D</span>
+            <span class="daou-logo-name">Daou<strong>Office</strong></span>
+          </div>
+          <nav class="daou-gnb">
+            <a href="#" class="daou-gnb-item">홈</a>
+            <a href="#" class="daou-gnb-item active">전자결재</a>
+            <a href="#" class="daou-gnb-item">메신저</a>
+            <a href="#" class="daou-gnb-item">업무관리</a>
+            <a href="#" class="daou-gnb-item">게시판</a>
+            <a href="#" class="daou-gnb-item">설정</a>
+          </nav>
+          <div class="daou-user-area">
+            <span class="daou-user-name">박지현 과장</span>
+            <span class="daou-dept-name">총무팀</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- ===== CONTENT LAYOUT ===== -->
+      <div class="daou-content-wrap">
+        <!-- SIDEBAR -->
+        <aside class="daou-sidebar">
+          <div class="daou-sidebar-header">전자결재</div>
+          <ul class="daou-lnb">
+            <li class="daou-lnb-item"><a href="#">새 기안 작성</a></li>
+            <li class="daou-lnb-item active">
+              <a href="#">결재 대기 <span class="daou-count">5</span></a>
+            </li>
+            <li class="daou-lnb-item"><a href="#">결재 진행</a></li>
+            <li class="daou-lnb-item"><a href="#">결재 완료</a></li>
+            <li class="daou-lnb-item"><a href="#">반려 문서</a></li>
+            <li class="daou-lnb-divider"></li>
+            <li class="daou-lnb-item"><a href="#">임시 보관함</a></li>
+            <li class="daou-lnb-item"><a href="#">결재선 설정</a></li>
+            <li class="daou-lnb-item"><a href="#">양식 관리</a></li>
+          </ul>
+        </aside>
+
+        <!-- MAIN -->
+        <main class="daou-main">
+
+          <!-- Breadcrumb -->
+          <div class="daou-breadcrumb">
+            <span>전자결재</span>
+            <span class="daou-bc-sep">&gt;</span>
+            <span>결재 대기</span>
+            <span class="daou-bc-sep">&gt;</span>
+            <span class="daou-bc-current">문서 상세</span>
+          </div>
+
+          <!-- Toolbar -->
+          <div class="daou-toolbar">
+            <button class="daou-btn daou-btn-approve">승인</button>
+            <button class="daou-btn daou-btn-reject">반려</button>
+            <button class="daou-btn">전달</button>
+            <button class="daou-btn">인쇄</button>
+            <button class="daou-btn">목록</button>
+          </div>
+
+          <!-- ===== DOCUMENT VIEW ===== -->
+          <div id="docView" class="daou-doc">
+
+            <!-- Document Header -->
+            <div class="daou-doc-header">
+              <span class="daou-doc-type">품의서</span>
+              <span class="daou-doc-number">품의-2026-0038</span>
+              <span class="daou-doc-status daou-status-progress">결재진행</span>
+            </div>
+
+            <!-- Form Fields -->
+            <div class="daou-form-section">
+              <div class="form-field">
+                <label class="form-label">제목</label>
+                <div class="form-value doc-title">사무실 공기청정기 3대 구매</div>
+              </div>
+              <div class="daou-form-row">
+                <div class="form-field">
+                  <label class="form-label">기안자</label>
+                  <div class="form-value requester-name">박지현</div>
+                </div>
+                <div class="form-field">
+                  <label class="form-label">부서</label>
+                  <div class="form-value requester-dept">총무팀</div>
+                </div>
+                <div class="form-field">
+                  <label class="form-label">직급</label>
+                  <div class="form-value">과장</div>
+                </div>
+                <div class="form-field">
+                  <label class="form-label">기안일</label>
+                  <div class="form-value doc-date">2026-02-14</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Approval Line (Form Style) -->
+            <div class="daou-approval-section">
+              <h3 class="daou-section-title">결재 현황</h3>
+              <div class="daou-approval-flow">
+                <div class="daou-approval-step completed">
+                  <div class="daou-step-header">기안</div>
+                  <div class="daou-step-name">박지현</div>
+                  <div class="daou-step-position">과장</div>
+                  <div class="daou-step-status approved">
+                    <span class="daou-status-icon">&#10003;</span> 기안완료
+                  </div>
+                  <div class="daou-step-date">2026-02-14 09:30</div>
+                </div>
+                <div class="daou-approval-arrow">&rarr;</div>
+                <div class="daou-approval-step completed">
+                  <div class="daou-step-header">1차 결재</div>
+                  <div class="daou-step-name">김덕호</div>
+                  <div class="daou-step-position">부장</div>
+                  <div class="daou-step-status approved">
+                    <span class="daou-status-icon">&#10003;</span> 승인완료
+                  </div>
+                  <div class="daou-step-date">2026-02-14 14:15</div>
+                </div>
+                <div class="daou-approval-arrow">&rarr;</div>
+                <div class="daou-approval-step current">
+                  <div class="daou-step-header">2차 결재</div>
+                  <div class="daou-step-name">박상무</div>
+                  <div class="daou-step-position">상무</div>
+                  <div class="daou-step-status pending">
+                    <span class="daou-status-icon">&#9711;</span> 대기
+                  </div>
+                  <div class="daou-step-date">-</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Document Body -->
+            <div class="daou-body-section">
+              <h3 class="daou-section-title">기안 내용</h3>
+              <div class="daou-doc-body">
+                <p>
+                  2026년 1월 실시한 사내 업무환경 만족도 조사 결과, 전체 응답자 127명 중 89명(70.1%)이
+                  "사무실 공기질 개선이 필요하다"고 답변하였습니다.
+                  특히 겨울철 환기 부족과 미세먼지 유입으로 인해 두통, 집중력 저하 등을 호소하는 직원이
+                  전년 동기 대비 23% 증가하였습니다.
+                </p>
+
+                <!-- 표 이미지 1: 만족도 조사 결과 (이미지로 삽입된 표) -->
+                <div style="margin: 16px 0; text-align: center;">
+                  <img src="assets/survey-results.jpg" alt="업무환경 만족도 조사 결과" style="max-width: 100%; border: 1px solid #e2e8f0; border-radius: 6px;" />
+                </div>
+
+                <p>
+                  환경부 실내공기질 측정 결과, 본사 사무실 3개 층(5층, 7층, 9층)의 미세먼지(PM2.5) 농도가
+                  평균 48㎍/m&sup3;으로 실내공기질 권고기준(35㎍/m&sup3;)을 초과하고 있는 것으로 확인되었습니다.
+                  이에 해당 3개 층에 업무용 공기청정기를 각 1대씩, 총 3대를 설치하고자 합니다.
+                </p>
+                <p>
+                  제품은 삼성전자 BESPOKE 큐브 에어(AX173B9910GSD) 모델로 선정하였으며,
+                  대당 가격 549,000원, 총 구매비용은 1,647,000원(VAT 포함)입니다.
+                  설치비 및 첫 1년 필터 교체비는 삼성 공식 온라인몰 프로모션 적용으로 무상 제공됩니다.
+                  3사 비교견적을 진행하였으며, 해당 모델이 성능(CADR 573m&sup3;/h), 소음(22dB),
+                  에너지 효율(1등급) 면에서 가장 우수하였습니다.
+                </p>
+
+                <!-- 표 이미지 2: 비교견적서 (이미지로 삽입된 표) -->
+                <div style="margin: 16px 0; text-align: center;">
+                  <img src="assets/comparison-table.jpg" alt="3사 비교견적서" style="max-width: 100%; border: 1px solid #e2e8f0; border-radius: 6px;" />
+                </div>
+                <p>
+                  도입 시 기대효과로는 첫째, 직원 업무환경 만족도 5점 척도 기준 현재 3.2점에서
+                  3.8점 이상으로 개선이 예상됩니다.
+                  둘째, 미세먼지 관련 건강 이상 호소 건수를 월 15건에서 3건 이하로 감소시킬 수 있습니다.
+                  셋째, 쾌적한 환경 조성을 통해 직원 집중도 및 업무 생산성 향상이 기대됩니다.
+                  위 사항을 검토하시어 승인하여 주시기 바랍니다.
+                </p>
+              </div>
+            </div>
+
+            <!-- Attachments -->
+            <div class="daou-attachments">
+              <h3 class="daou-section-title">첨부파일</h3>
+              <ul class="daou-file-list">
+                <li>
+                  <span class="daou-file-icon">&#128196;</span>
+                  <a href="#">업무환경_만족도조사_결과.pdf</a>
+                  <span class="daou-file-size">1.8MB</span>
+                </li>
+                <li>
+                  <span class="daou-file-icon">&#128196;</span>
+                  <a href="#">공기청정기_비교견적서.xlsx</a>
+                  <span class="daou-file-size">420KB</span>
+                </li>
+                <li>
+                  <span class="daou-file-icon">&#128196;</span>
+                  <a href="#">실내공기질_측정보고서.pdf</a>
+                  <span class="daou-file-size">3.2MB</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Comments -->
+            <div class="daou-comments">
+              <h3 class="daou-section-title">결재 의견</h3>
+              <div class="daou-comment-item">
+                <div class="daou-comment-author">김덕호 부장</div>
+                <div class="daou-comment-date">2026-02-14 14:15</div>
+                <div class="daou-comment-text">
+                  직원 건강 및 업무환경 개선에 필요한 사안으로 판단됩니다.
+                  비교견적도 적절히 진행되었으므로 승인합니다.
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /#docView -->
+
+        </main>
+      </div><!-- /.daou-content-wrap -->
+
+      <!-- FOOTER -->
+      <footer class="daou-footer">
+        <p>&copy; 2026 Daou Office. All rights reserved.</p>
+      </footer>
+
+    </div><!-- /.daou-wrap -->
+  </div><!-- /#daouoffice-app -->
+</body>
+</html>

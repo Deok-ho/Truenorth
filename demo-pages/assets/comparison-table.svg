@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="320" viewBox="0 0 680 320">
+  <style>
+    text { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; font-size: 13px; fill: #1e293b; }
+    .header { font-weight: bold; font-size: 14px; fill: #ffffff; }
+    .label { font-weight: bold; fill: #334155; }
+    .highlight { font-weight: bold; fill: #4f46e5; }
+    .title { font-size: 16px; font-weight: bold; fill: #0f172a; }
+  </style>
+
+  <!-- Background -->
+  <rect width="680" height="320" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="340" y="30" text-anchor="middle" class="title">3사 비교견적서 (공기청정기)</text>
+
+  <!-- Header row -->
+  <rect x="10" y="45" width="120" height="36" rx="4" fill="#4f46e5"/>
+  <rect x="132" y="45" width="180" height="36" rx="4" fill="#4f46e5"/>
+  <rect x="314" y="45" width="180" height="36" rx="4" fill="#4f46e5"/>
+  <rect x="496" y="45" width="174" height="36" rx="4" fill="#4f46e5"/>
+  <text x="70" y="68" text-anchor="middle" class="header">항목</text>
+  <text x="222" y="68" text-anchor="middle" class="header">삼성 BESPOKE 큐브에어</text>
+  <text x="404" y="68" text-anchor="middle" class="header">LG 퓨리케어 에어로타워</text>
+  <text x="583" y="68" text-anchor="middle" class="header">위닉스 타워XQ</text>
+
+  <!-- Row backgrounds -->
+  <rect x="10" y="83" width="660" height="32" fill="#f8fafc"/>
+  <rect x="10" y="117" width="660" height="32" fill="#ffffff"/>
+  <rect x="10" y="151" width="660" height="32" fill="#f8fafc"/>
+  <rect x="10" y="185" width="660" height="32" fill="#ffffff"/>
+  <rect x="10" y="219" width="660" height="32" fill="#f8fafc"/>
+  <rect x="10" y="253" width="660" height="32" fill="#ffffff"/>
+
+  <!-- Row: 모델명 -->
+  <text x="70" y="104" text-anchor="middle" class="label">모델명</text>
+  <text x="222" y="104" text-anchor="middle" class="highlight">AX173B9910GSD</text>
+  <text x="404" y="104" text-anchor="middle">FS063PSAA</text>
+  <text x="583" y="104" text-anchor="middle">ATXE763-JWK</text>
+
+  <!-- Row: 대당가격 -->
+  <text x="70" y="138" text-anchor="middle" class="label">대당가격(VAT)</text>
+  <text x="222" y="138" text-anchor="middle" class="highlight">549,000원</text>
+  <text x="404" y="138" text-anchor="middle">629,000원</text>
+  <text x="583" y="138" text-anchor="middle">489,000원</text>
+
+  <!-- Row: CADR -->
+  <text x="70" y="172" text-anchor="middle" class="label">CADR(m³/h)</text>
+  <text x="222" y="172" text-anchor="middle" class="highlight">573</text>
+  <text x="404" y="172" text-anchor="middle">523</text>
+  <text x="583" y="172" text-anchor="middle">467</text>
+
+  <!-- Row: 소음 -->
+  <text x="70" y="206" text-anchor="middle" class="label">소음(dB)</text>
+  <text x="222" y="206" text-anchor="middle" class="highlight">22</text>
+  <text x="404" y="206" text-anchor="middle">25</text>
+  <text x="583" y="206" text-anchor="middle">28</text>
+
+  <!-- Row: 에너지등급 -->
+  <text x="70" y="240" text-anchor="middle" class="label">에너지등급</text>
+  <text x="222" y="240" text-anchor="middle" class="highlight">1등급</text>
+  <text x="404" y="240" text-anchor="middle">2등급</text>
+  <text x="583" y="240" text-anchor="middle">2등급</text>
+
+  <!-- Row: 설치비 -->
+  <text x="70" y="274" text-anchor="middle" class="label">설치비</text>
+  <text x="222" y="274" text-anchor="middle" class="highlight">무상</text>
+  <text x="404" y="274" text-anchor="middle">50,000원</text>
+  <text x="583" y="274" text-anchor="middle">무상</text>
+
+  <!-- Footer: 선정 표시 -->
+  <rect x="132" y="288" width="180" height="24" rx="12" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="222" y="305" text-anchor="middle" style="font-size:12px; font-weight:bold; fill:#4f46e5;">★ 선정 제품</text>
+
+  <!-- Grid lines -->
+  <line x1="130" y1="45" x2="130" y2="285" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="312" y1="45" x2="312" y2="285" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="494" y1="45" x2="494" y2="285" stroke="#e2e8f0" stroke-width="1"/>
+</svg>

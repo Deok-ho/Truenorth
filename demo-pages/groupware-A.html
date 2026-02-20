@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko" data-groupware="hiworks">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>하이웍스 - 결재문서</title>
+  <link rel="stylesheet" href="assets/hiworks-style.css" />
+</head>
+<body>
+  <!-- Hiworks DOM signature for detector.ts -->
+  <div id="hiworks-app">
+    <div class="hiworks-container">
+
+      <!-- ===== HEADER ===== -->
+      <header class="hw-header">
+        <div class="hw-header-left">
+          <div class="hw-logo">
+            <span class="hw-logo-icon">H</span>
+            <span class="hw-logo-text">HiWorks</span>
+          </div>
+          <nav class="hw-nav">
+            <a href="#" class="hw-nav-item active">결재</a>
+            <a href="#" class="hw-nav-item">메일</a>
+            <a href="#" class="hw-nav-item">캘린더</a>
+            <a href="#" class="hw-nav-item">게시판</a>
+            <a href="#" class="hw-nav-item">주소록</a>
+          </nav>
+        </div>
+        <div class="hw-header-right">
+          <span class="hw-user-info">이수진 대리</span>
+          <button class="hw-btn-logout">로그아웃</button>
+        </div>
+      </header>
+
+      <!-- ===== BODY LAYOUT ===== -->
+      <div class="hw-body">
+        <!-- SIDEBAR -->
+        <aside class="hw-sidebar">
+          <div class="hw-sidebar-title">결재</div>
+          <ul class="hw-sidebar-menu">
+            <li class="hw-menu-item active">
+              <a href="#">기안 작성</a>
+            </li>
+            <li class="hw-menu-item">
+              <a href="#">결재 대기함 <span class="hw-badge">3</span></a>
+            </li>
+            <li class="hw-menu-item">
+              <a href="#">결재 진행함</a>
+            </li>
+            <li class="hw-menu-item">
+              <a href="#">결재 완료함</a>
+            </li>
+            <li class="hw-menu-item">
+              <a href="#">반려함</a>
+            </li>
+            <li class="hw-menu-separator"></li>
+            <li class="hw-menu-item">
+              <a href="#">임시 저장함</a>
+            </li>
+            <li class="hw-menu-item">
+              <a href="#">결재선 관리</a>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="hw-main">
+          <div class="hw-content-header">
+            <h2 class="hw-page-title">결재 문서 상세</h2>
+            <div class="hw-actions">
+              <button class="hw-btn hw-btn-primary">승인</button>
+              <button class="hw-btn hw-btn-danger">반려</button>
+              <button class="hw-btn">인쇄</button>
+            </div>
+          </div>
+
+          <!-- ===== APPROVAL DOCUMENT ===== -->
+          <div class="approval-content">
+
+            <!-- Document Type Badge -->
+            <div class="doc-type-area">
+              <span class="doc-type-badge">품의서</span>
+              <span class="doc-number">품의-2026-0042</span>
+            </div>
+
+            <!-- Document Title -->
+            <h1 class="doc-title">전 매장 재고관리 모바일 앱 도입</h1>
+
+            <!-- Document Info Table -->
+            <table class="doc-info">
+              <tbody>
+                <tr>
+                  <th>기안자</th>
+                  <td class="requester-name">이수진</td>
+                  <th>부서</th>
+                  <td class="requester-dept">영업팀</td>
+                </tr>
+                <tr>
+                  <th>직급</th>
+                  <td>대리</td>
+                  <th>기안일</th>
+                  <td class="doc-date">2026-02-15</td>
+                </tr>
+                <tr>
+                  <th>문서번호</th>
+                  <td colspan="3">품의-2026-0042</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Approval Line Table -->
+            <div class="approval-line-section">
+              <h3 class="section-title">결재선</h3>
+              <table class="approval-table">
+                <thead>
+                  <tr>
+                    <th>구분</th>
+                    <th>기안</th>
+                    <th>1차 결재</th>
+                    <th>2차 결재</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>직급</th>
+                    <td>대리</td>
+                    <td>부장</td>
+                    <td>상무</td>
+                  </tr>
+                  <tr>
+                    <th>성명</th>
+                    <td>이수진</td>
+                    <td>김덕호</td>
+                    <td>박상무</td>
+                  </tr>
+                  <tr>
+                    <th>상태</th>
+                    <td><span class="status-approved">기안완료</span></td>
+                    <td><span class="status-pending">대기</span></td>
+                    <td><span class="status-pending">대기</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Document Body -->
+            <div class="doc-body-section">
+              <h3 class="section-title">기안 내용</h3>
+              <div class="doc-body">
+                <p>
+                  현재 전국 12개 매장에서 재고관리를 엑셀 및 수기 대장으로 운영하고 있으나,
+                  매장 간 재고 이동 시 실시간 반영이 되지 않아 재고 불일치 문제가 월평균 47건 발생하고 있습니다.
+                  이로 인해 고객 주문 취소율이 전년 대비 12% 증가하였으며,
+                  매장 직원들의 재고 확인을 위한 본사 문의 전화가 하루 평균 35건에 달하고 있습니다.
+                </p>
+                <p>
+                  이에 모바일 기반 재고관리 앱(인벤토리 프로)을 전 매장에 도입하여
+                  실시간 재고 현황 파악 및 매장 간 재고 이동을 자동 동기화하고자 합니다.
+                  도입 비용은 초기 구축비 1,200만 원, 월 운영비 80만 원(12개 매장 기준)이며,
+                  기존 POS 시스템과 API 연동을 통해 이중 입력 없이 운영 가능합니다.
+                  벤더 3사 비교견적 결과, (주)스마트인벤이 기능 대비 가격 경쟁력이 가장 우수하여 선정하였습니다.
+                </p>
+                <p>
+                  도입 시 기대효과는 다음과 같습니다.
+                  첫째, 재고 불일치 건수를 월 47건에서 5건 이하로 감소시킬 수 있습니다.
+                  둘째, 매장 간 재고 이동 처리 시간이 현재 평균 4시간에서 30분 이내로 단축됩니다.
+                  셋째, 본사 재고 문의 전화를 하루 35건에서 5건 이하로 줄여 영업팀 업무 효율을 개선할 수 있습니다.
+                  넷째, 정확한 재고 데이터 기반의 발주 최적화로 연간 약 2,400만 원의 재고 비용 절감이 예상됩니다.
+                </p>
+                <p>
+                  도입 일정은 2026년 3월 중 파일럿 매장 2곳 시범 운영 후,
+                  4월부터 전 매장 순차 확대를 계획하고 있습니다.
+                  위 사항을 검토하시어 결재하여 주시기 바랍니다.
+                </p>
+              </div>
+            </div>
+
+            <!-- Attachments -->
+            <div class="doc-attachments">
+              <h3 class="section-title">첨부파일</h3>
+              <ul class="attachment-list">
+                <li><a href="#">벤더_비교견적서_3사.pdf</a> (2.1MB)</li>
+                <li><a href="#">인벤토리프로_기능소개서.pdf</a> (5.4MB)</li>
+                <li><a href="#">재고불일치_현황분석.xlsx</a> (340KB)</li>
+              </ul>
+            </div>
+
+          </div><!-- /.approval-content -->
+
+        </main>
+      </div><!-- /.hw-body -->
+
+      <!-- FOOTER -->
+      <footer class="hw-footer">
+        <p>&copy; 2026 HiWorks Groupware. All rights reserved.</p>
+      </footer>
+
+    </div><!-- /.hiworks-container -->
+  </div><!-- /#hiworks-app -->
+</body>
+</html>

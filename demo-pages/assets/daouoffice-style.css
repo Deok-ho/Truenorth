@@ -1,0 +1,580 @@
+/* ============================================
+   Daou Office Groupware Style — Green / Teal Theme
+   ============================================ */
+
+/* --- Reset & Base --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  color: #334155;
+  background: #f1f5f9;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== HEADER ===== */
+.daou-header {
+  background: #fff;
+  border-bottom: 2px solid #0d9488;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.daou-header-inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.daou-logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 40px;
+}
+
+.daou-logo-symbol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #0d9488;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.daou-logo-name {
+  font-size: 17px;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+.daou-logo-name strong {
+  color: #0d9488;
+}
+
+.daou-gnb {
+  display: flex;
+  gap: 2px;
+  flex: 1;
+}
+
+.daou-gnb-item {
+  padding: 8px 16px;
+  font-size: 13px;
+  color: #64748b;
+  border-radius: 4px;
+  transition: background 0.12s, color 0.12s;
+}
+
+.daou-gnb-item:hover {
+  background: #f0fdfa;
+  color: #0d9488;
+}
+
+.daou-gnb-item.active {
+  background: #f0fdfa;
+  color: #0d9488;
+  font-weight: 700;
+}
+
+.daou-user-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.daou-user-name {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.daou-dept-name {
+  color: #94a3b8;
+}
+
+/* ===== CONTENT LAYOUT ===== */
+.daou-content-wrap {
+  display: flex;
+  min-height: calc(100vh - 56px - 44px);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ===== SIDEBAR ===== */
+.daou-sidebar {
+  width: 200px;
+  background: #fff;
+  border-right: 1px solid #e2e8f0;
+  padding: 16px 0;
+  flex-shrink: 0;
+}
+
+.daou-sidebar-header {
+  padding: 8px 20px 12px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0d9488;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 4px;
+}
+
+.daou-lnb {
+  list-style: none;
+}
+
+.daou-lnb-item a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 20px;
+  font-size: 13px;
+  color: #64748b;
+  transition: background 0.12s, color 0.12s;
+}
+
+.daou-lnb-item a:hover {
+  background: #f0fdfa;
+  color: #0d9488;
+}
+
+.daou-lnb-item.active a {
+  background: #f0fdfa;
+  color: #0d9488;
+  font-weight: 600;
+  border-left: 3px solid #0d9488;
+}
+
+.daou-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  background: #ef4444;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.daou-lnb-divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 8px 16px;
+}
+
+/* ===== MAIN ===== */
+.daou-main {
+  flex: 1;
+  padding: 20px 32px;
+  max-width: 900px;
+}
+
+/* --- Breadcrumb --- */
+.daou-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 16px;
+}
+
+.daou-bc-sep {
+  color: #cbd5e1;
+}
+
+.daou-bc-current {
+  color: #0d9488;
+  font-weight: 600;
+}
+
+/* --- Toolbar --- */
+.daou-toolbar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.daou-btn {
+  padding: 7px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #fff;
+  color: #64748b;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.12s;
+}
+
+.daou-btn:hover {
+  background: #f8fafc;
+}
+
+.daou-btn-approve {
+  background: #0d9488;
+  color: #fff;
+  border-color: #0d9488;
+}
+
+.daou-btn-approve:hover {
+  background: #0f766e;
+}
+
+.daou-btn-reject {
+  color: #ef4444;
+  border-color: #ef4444;
+}
+
+.daou-btn-reject:hover {
+  background: #fef2f2;
+}
+
+/* ===== DOCUMENT VIEW ===== */
+.daou-doc {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 28px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* --- Doc Header --- */
+.daou-doc-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #0d9488;
+}
+
+.daou-doc-type {
+  display: inline-block;
+  padding: 4px 14px;
+  background: #0d9488;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.daou-doc-number {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.daou-doc-status {
+  margin-left: auto;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.daou-status-progress {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+/* --- Form Fields --- */
+.daou-form-section {
+  margin-bottom: 24px;
+}
+
+.daou-form-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.form-field {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.form-value {
+  font-size: 14px;
+  color: #0f172a;
+  padding: 8px 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+}
+
+.form-value.doc-title {
+  font-size: 18px;
+  font-weight: 700;
+  background: transparent;
+  border: none;
+  padding: 4px 0;
+  color: #0f172a;
+}
+
+/* --- Section Titles --- */
+.daou-section-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0d9488;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* --- Approval Flow --- */
+.daou-approval-section {
+  margin-bottom: 24px;
+}
+
+.daou-approval-flow {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+
+.daou-approval-step {
+  flex: 1;
+  text-align: center;
+  padding: 16px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #f8fafc;
+  transition: box-shadow 0.15s;
+}
+
+.daou-approval-step.completed {
+  border-color: #0d9488;
+  background: #f0fdfa;
+}
+
+.daou-approval-step.current {
+  border-color: #fbbf24;
+  background: #fffbeb;
+  box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.3);
+}
+
+.daou-approval-arrow {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  font-size: 20px;
+  color: #cbd5e1;
+}
+
+.daou-step-header {
+  font-size: 11px;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.daou-step-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 2px;
+}
+
+.daou-step-position {
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.daou-step-status {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.daou-step-status.approved {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.daou-step-status.pending {
+  background: #fefce8;
+  color: #854d0e;
+}
+
+.daou-step-status.rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.daou-status-icon {
+  margin-right: 2px;
+}
+
+.daou-step-date {
+  font-size: 11px;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+/* --- Document Body --- */
+.daou-body-section {
+  margin-bottom: 24px;
+}
+
+.daou-doc-body p {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #334155;
+  text-align: justify;
+}
+
+/* --- Attachments --- */
+.daou-attachments {
+  margin-bottom: 24px;
+}
+
+.daou-file-list {
+  list-style: none;
+}
+
+.daou-file-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 13px;
+}
+
+.daou-file-list li:last-child {
+  border-bottom: none;
+}
+
+.daou-file-icon {
+  font-size: 16px;
+}
+
+.daou-file-list a {
+  color: #0d9488;
+}
+
+.daou-file-list a:hover {
+  text-decoration: underline;
+}
+
+.daou-file-size {
+  color: #94a3b8;
+  font-size: 12px;
+  margin-left: auto;
+}
+
+/* --- Comments --- */
+.daou-comments {
+  margin-bottom: 16px;
+}
+
+.daou-comment-item {
+  padding: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  margin-top: 8px;
+}
+
+.daou-comment-author {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.daou-comment-date {
+  font-size: 11px;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+.daou-comment-text {
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* ===== FOOTER ===== */
+.daou-footer {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-top: 1px solid #e2e8f0;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+  .daou-header,
+  .daou-sidebar,
+  .daou-footer,
+  .daou-toolbar,
+  .daou-breadcrumb {
+    display: none !important;
+  }
+
+  .daou-content-wrap {
+    display: block;
+  }
+
+  .daou-main {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .daou-doc {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  body {
+    background: #fff;
+  }
+}

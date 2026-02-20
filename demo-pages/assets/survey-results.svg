@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="280" viewBox="0 0 600 280">
+  <style>
+    text { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; font-size: 13px; fill: #1e293b; }
+    .header { font-weight: bold; font-size: 13px; fill: #ffffff; }
+    .label { font-weight: bold; fill: #334155; }
+    .title { font-size: 16px; font-weight: bold; fill: #0f172a; }
+    .pct { font-weight: bold; font-size: 12px; }
+  </style>
+
+  <!-- Background -->
+  <rect width="600" height="280" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="300" y="28" text-anchor="middle" class="title">2026년 1월 업무환경 만족도 조사 결과 (N=127)</text>
+
+  <!-- Header -->
+  <rect x="10" y="42" width="200" height="32" rx="4" fill="#0f766e"/>
+  <rect x="212" y="42" width="80" height="32" rx="4" fill="#0f766e"/>
+  <rect x="294" y="42" width="296" height="32" rx="4" fill="#0f766e"/>
+  <text x="110" y="63" text-anchor="middle" class="header">조사 항목</text>
+  <text x="252" y="63" text-anchor="middle" class="header">응답률</text>
+  <text x="442" y="63" text-anchor="middle" class="header">비율</text>
+
+  <!-- Row 1 -->
+  <rect x="10" y="76" width="580" height="36" fill="#f0fdfa"/>
+  <text x="20" y="99" class="label">공기질 개선 필요</text>
+  <text x="252" y="99" text-anchor="middle">89명/127명</text>
+  <rect x="294" y="84" width="208" height="20" rx="4" fill="#14b8a6"/>
+  <rect x="294" y="84" width="296" height="20" rx="4" fill="#e2e8f0"/>
+  <rect x="294" y="84" width="208" height="20" rx="4" fill="#14b8a6"/>
+  <text x="510" y="99" class="pct" fill="#0f766e">70.1%</text>
+
+  <!-- Row 2 -->
+  <rect x="10" y="114" width="580" height="36" fill="#ffffff"/>
+  <text x="20" y="137" class="label">두통·집중력 저하 호소</text>
+  <text x="252" y="137" text-anchor="middle">41명/127명</text>
+  <rect x="294" y="122" width="296" height="20" rx="4" fill="#e2e8f0"/>
+  <rect x="294" y="122" width="96" height="20" rx="4" fill="#f59e0b"/>
+  <text x="510" y="137" class="pct" fill="#d97706">32.3%</text>
+
+  <!-- Row 3 -->
+  <rect x="10" y="152" width="580" height="36" fill="#f0fdfa"/>
+  <text x="20" y="175" class="label">환기 시스템 불만</text>
+  <text x="252" y="175" text-anchor="middle">67명/127명</text>
+  <rect x="294" y="160" width="296" height="20" rx="4" fill="#e2e8f0"/>
+  <rect x="294" y="160" width="156" height="20" rx="4" fill="#14b8a6"/>
+  <text x="510" y="175" class="pct" fill="#0f766e">52.8%</text>
+
+  <!-- Row 4 -->
+  <rect x="10" y="190" width="580" height="36" fill="#ffffff"/>
+  <text x="20" y="213" class="label">현재 실내공기 만족</text>
+  <text x="252" y="213" text-anchor="middle">23명/127명</text>
+  <rect x="294" y="198" width="296" height="20" rx="4" fill="#e2e8f0"/>
+  <rect x="294" y="198" width="54" height="20" rx="4" fill="#94a3b8"/>
+  <text x="510" y="213" class="pct" fill="#64748b">18.1%</text>
+
+  <!-- Footer -->
+  <rect x="10" y="240" width="580" height="30" rx="4" fill="#fef3c7"/>
+  <text x="300" y="260" text-anchor="middle" style="font-size:12px; fill:#92400e;">※ 전년 동기 대비 건강 이상 호소 23% 증가 | 조사기간: 2026.01.08~01.15 | 조사방법: 전사 온라인 설문</text>
+</svg>

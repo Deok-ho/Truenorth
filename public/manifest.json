@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "Truenorth - AI 결재문서 분석",
+  "version": "0.1.0",
+  "description": "그룹웨어 결재문서를 AI가 요약하고, 정합성을 검증하고, 유사문서를 찾아줍니다.",
+  "permissions": [
+    "activeTab",
+    "sidePanel",
+    "storage",
+    "identity"
+  ],
+  "host_permissions": [
+    "https://*.douzone.com/*",
+    "https://*.hiworks.com/*",
+    "https://*.daouoffice.com/*",
+    "https://*.flow.team/*",
+    "https://api.openai.com/*",
+    "https://*.supabase.co/*"
+  ],
+  "background": {
+    "service_worker": "src/background/index.ts",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["src/content/index.ts"],
+      "run_at": "document_idle"
+    }
+  ],
+  "side_panel": {
+    "default_path": "src/sidepanel/index.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Truenorth",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}

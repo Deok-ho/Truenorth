@@ -1,0 +1,18 @@
+node_modules/
+dist/
+backup/
+NUL
+.env
+.env.local
+*.log
+.DS_Store
+Thumbs.db
+
+# 불필요
+demo-pages/generated/
+demo-pages/assets/gen_images.py
+demo-pages/gen_demo_pages.py
+demo-pages/groupware-C.html
+docs/
+package-lock.json
+supabase/.temp/
